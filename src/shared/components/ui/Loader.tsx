@@ -2,7 +2,7 @@ import { SVGProps } from "react";
 
 interface LoaderProps extends SVGProps<SVGSVGElement> {}
 
-const Loader = ({ className, ...props }: LoaderProps) => {
+const Loader = ({ className = "h-5 w-5 animate-spin text-white", ...props }: LoaderProps) => {
   return (
     <svg
       className={className} // ✅ now accepts custom classes
